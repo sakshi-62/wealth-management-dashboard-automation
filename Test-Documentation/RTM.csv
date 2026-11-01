@@ -1,0 +1,14 @@
+
+Requirement ID,Requirement Description,Scenario ID,Test Case ID,Testing Type,Coverage Status
+FR-001,User Login,TS-001,TC-001,Functional,Planned
+FR-002,Invalid Login,TS-002; TS-003; TS-004; TS-005,TC-002; TC-003; TC-004; TC-005,Negative,Planned
+FR-003,Dashboard Display,TS-007; TS-008; TS-009,TC-006; TC-007; TC-008,Functional,Planned
+FR-004,Portfolio Holdings,TS-012; TS-013; TS-014; TS-015,TC-011,Functional,Planned
+FR-005,Portfolio Valuation,TS-016; TS-017,TC-012; TC-013; TC-014; TC-015,Calculation,Planned
+FR-006,Cash Balance,TS-011,TC-010,Functional,Planned
+FR-007,Transaction History,TS-018; TS-019; TS-020; TS-021; TS-022,TC-016,Functional,Planned
+FR-008,Transaction Filtering,TS-023; TS-024; TS-025; TS-026,TC-017; TC-018,Functional,Planned
+FR-009,User Logout,TS-027; TS-028; TS-029,TC-019; TC-020,Functional,Planned
+BR-003,Holding Value Calculation,TS-030; TS-031; TS-032,TC-012; TC-013; TC-014,Calculation,Planned
+BR-004,Total Investment Holdings Calculation,TS-033,TC-015,Calculation,Planned
+BR-005,Total Account Value Calculation,TS-034,TC-009; TC-010,Calculation,Planned
