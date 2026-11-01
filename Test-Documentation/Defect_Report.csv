@@ -1,0 +1,7 @@
+
+Defect ID,Module,Defect Title,Steps to Reproduce,Expected Result,Actual Result,Severity,Priority,Status,Defect Type
+BUG-001,Login,Invalid credentials validation example,"Enter invalid email and password; click Login","Error message should be displayed","To be verified during execution",Medium,High,Not Verified,Hypothetical example
+BUG-002,Dashboard,Incorrect account value example,"Log in; check total account value","Total account value should be $137500","To be verified during execution",High,High,Not Verified,Hypothetical example
+BUG-003,Portfolio,Incorrect holding calculation example,"Log in; check ACME holding value","ACME holding value should be $50000","To be verified during execution",High,High,Not Verified,Hypothetical example
+BUG-004,Transactions,Transaction filter example,"Log in; select Buy filter","Only Buy transactions should appear","To be verified during execution",Medium,Medium,Not Verified,Hypothetical example
+BUG-005,Logout,Dashboard access after logout example,"Log in; click Logout; attempt dashboard access","Dashboard should not be accessible","To be verified during execution",High,High,Not Verified,Hypothetical example
