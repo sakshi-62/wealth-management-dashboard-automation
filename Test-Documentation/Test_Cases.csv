@@ -1,0 +1,22 @@
+
+Test Case ID,Scenario ID,Module,Test Case Description,Precondition,Test Steps,Test Data,Expected Result,Actual Result,Status,Priority
+TC-001,TS-001,Login,Verify login with valid credentials,Application is open,"Enter email; Enter password; Click Login",qa.user@example.com / Demo@123,User should log in successfully,Not Executed,Not Run,High
+TC-002,TS-002,Login,Verify login with invalid email,Application is open,"Enter invalid email; Enter password; Click Login",invalid@example.com / Demo@123,Error message should be displayed,Not Executed,Not Run,High
+TC-003,TS-003,Login,Verify login with invalid password,Application is open,"Enter email; Enter invalid password; Click Login",qa.user@example.com / Wrong123,Error message should be displayed,Not Executed,Not Run,High
+TC-004,TS-004,Login,Verify login with blank email,Application is open,"Leave email blank; Enter password; Click Login",Blank email / Demo@123,Email validation should be displayed,Not Executed,Not Run,Medium
+TC-005,TS-005,Login,Verify login with blank password,Application is open,"Enter email; Leave password blank; Click Login",qa.user@example.com / Blank password,Password validation should be displayed,Not Executed,Not Run,Medium
+TC-006,TS-007,Dashboard,Verify dashboard display,User is logged in,"Open dashboard; Check dashboard information",WM-1001,Dashboard should be displayed,Not Executed,Not Run,High
+TC-007,TS-008,Dashboard,Verify customer name,User is logged in,"Check customer name on dashboard",John Smith,Customer name should be displayed correctly,Not Executed,Not Run,Medium
+TC-008,TS-009,Dashboard,Verify account ID,User is logged in,"Check account ID on dashboard",WM-1001,Account ID should be displayed correctly,Not Executed,Not Run,Medium
+TC-009,TS-010,Dashboard,Verify total account value,User is logged in,"Check total account value",137500,Total account value should be $137500,Not Executed,Not Run,High
+TC-010,TS-011,Dashboard,Verify cash balance,User is logged in,"Check cash balance",12500,Cash balance should be $12500,Not Executed,Not Run,High
+TC-011,TS-012,Portfolio,Verify investment holdings,User is logged in,"Open holdings section; Check investments",ACME; GLOB; USTB,All three holdings should be displayed,Not Executed,Not Run,High
+TC-012,TS-016,Portfolio,Verify ACME holding calculation,User is logged in,"Check quantity; Check price; Verify holding value",500 x 100,ACME holding value should be $50000,Not Executed,Not Run,High
+TC-013,TS-016,Portfolio,Verify GLOB holding calculation,User is logged in,"Check quantity; Check price; Verify holding value",300 x 150,GLOB holding value should be $45000,Not Executed,Not Run,High
+TC-014,TS-016,Portfolio,Verify USTB holding calculation,User is logged in,"Check quantity; Check price; Verify holding value",600 x 50,USTB holding value should be $30000,Not Executed,Not Run,High
+TC-015,TS-017,Portfolio,Verify total investment value,User is logged in,"Add all holding values; Compare dashboard total",50000 + 45000 + 30000,Total holdings should be $125000,Not Executed,Not Run,High
+TC-016,TS-018,Transactions,Verify transaction history,User is logged in,"Open transaction section; Check records",WM-1001,Transaction records should be displayed,Not Executed,Not Run,High
+TC-017,TS-023,Transactions,Verify Buy transaction filter,User is logged in,"Select Buy filter; Check displayed records",Buy,Only Buy transactions should be displayed,Not Executed,Not Run,Medium
+TC-018,TS-024,Transactions,Verify Sell transaction filter,User is logged in,"Select Sell filter; Check displayed records",Sell,Only Sell transactions should be displayed,Not Executed,Not Run,Medium
+TC-019,TS-027,Logout,Verify logout functionality,User is logged in,"Click Logout; Check login screen",WM-1001,User should be logged out,Not Executed,Not Run,High
+TC-020,TS-029,Logout,Verify dashboard access after logout,User has logged out,"Attempt to access dashboard again",Logged-out session,Dashboard should not be accessible,Not Executed,Not Run,High
