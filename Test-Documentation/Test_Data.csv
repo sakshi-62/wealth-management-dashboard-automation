@@ -1,0 +1,35 @@
+
+Test Data ID,Module,Field,Test Value,Test Purpose,Expected Result
+TD-001,Login,Email,qa.user@example.com,Valid login email,Email should be accepted
+TD-002,Login,Password,Demo@123,Valid demo password,User should log in successfully
+TD-003,Login,Email,invalid@example.com,Invalid login email,Login should be rejected
+TD-004,Login,Password,Wrong123,Invalid password,Login should be rejected
+TD-005,Login,Email,Blank,Blank email validation,Validation message should appear
+TD-006,Login,Password,Blank,Blank password validation,Validation message should appear
+TD-007,Customer,Customer ID,CUST-1001,Verify customer information,Customer ID should match
+TD-008,Customer,Customer Name,John Smith,Verify customer name,Customer name should match
+TD-009,Account,Account ID,WM-1001,Verify account information,Account ID should match
+TD-010,Account,Account Type,Investment Account,Verify account type,Account type should match
+TD-011,Portfolio,Investment Name,Acme Corporation,Verify investment name,Investment should be displayed
+TD-012,Portfolio,Symbol,ACME,Verify investment symbol,Symbol should be displayed
+TD-013,Portfolio,Quantity,500,Verify investment quantity,Quantity should be 500
+TD-014,Portfolio,Current Price,100,Verify investment price,Price should be $100
+TD-015,Portfolio,Holding Value,50000,Verify holding calculation,Holding value should be $50000
+TD-016,Portfolio,Investment Name,Global Industries,Verify investment name,Investment should be displayed
+TD-017,Portfolio,Symbol,GLOB,Verify investment symbol,Symbol should be displayed
+TD-018,Portfolio,Quantity,300,Verify investment quantity,Quantity should be 300
+TD-019,Portfolio,Current Price,150,Verify investment price,Price should be $150
+TD-020,Portfolio,Holding Value,45000,Verify holding calculation,Holding value should be $45000
+TD-021,Portfolio,Investment Name,US Treasury Bond Fund,Verify investment name,Investment should be displayed
+TD-022,Portfolio,Symbol,USTB,Verify investment symbol,Symbol should be displayed
+TD-023,Portfolio,Quantity,600,Verify investment quantity,Quantity should be 600
+TD-024,Portfolio,Current Price,50,Verify investment price,Price should be $50
+TD-025,Portfolio,Holding Value,30000,Verify holding calculation,Holding value should be $30000
+TD-026,Account,Total Investment Holdings,125000,Verify total holdings,Total should be $125000
+TD-027,Account,Cash Balance,12500,Verify cash balance,Cash balance should be $12500
+TD-028,Account,Total Account Value,137500,Verify total account value,Total should be $137500
+TD-029,Transactions,Transaction Type,Buy,Verify Buy filter,Only Buy transactions should appear
+TD-030,Transactions,Transaction Type,Sell,Verify Sell filter,Only Sell transactions should appear
+TD-031,Transactions,Transaction Type,Deposit,Verify Deposit filter,Only Deposit transactions should appear
+TD-032,Transactions,Transaction Type,Withdrawal,Verify Withdrawal filter,Only Withdrawal transactions should appear
+TD-033,Logout,Session Status,Logged Out,Verify logout,User should return to login screen
